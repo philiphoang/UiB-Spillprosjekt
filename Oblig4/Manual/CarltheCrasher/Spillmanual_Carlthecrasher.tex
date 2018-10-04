@@ -1,0 +1,252 @@
+\documentclass[paper=a4]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\PreloadUnicodePage{0}
+\usepackage{xspace}
+\usepackage{array}
+\usepackage[hmargin=3.5cm,vmargin=2.7cm]{geometry} 
+\usepackage{graphicx,wrapfig}
+\usepackage{hyperref}
+
+
+\renewcommand{\contentsname}{Innhold}
+
+\begin{document}
+\title{ \normalsize \includegraphics[scale=0.43]{images/CarGameLogo.png}
+	\\
+	\includegraphics[scale=0.5]{images/menu_car.png}
+}
+\author{\textbf{Spillmanual} \\
+Team Dank \\
+Universitetet i Bergern \\
+Informatikk}
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduksjon}
+Dette er et spill tiltenkt datamaskiner der du som spiller er Carl og kjører en bil. 
+Som Carl liker du å kjøre uforsvarlig, og målet ditt er å komme deg så lengst mulig uten gå tom for bensin. 
+Bilen kjører langs en vei med forskjellige ting i veibanen, og som Carl ønsker du å kjøre på alt som gir deg lykke. 
+På veien er det også trafikanter som er i veien for Carl og den eneste måten å få de fjernet på fra veien til Carl er å kjøre på dem.
+I motsetning til ting som gir Carl lykke, befinner det seg en haug med vanndammer og kumlokker som vil forhindre Carl i å kjøre langt. 
+\begin{wrapfigure}{l}{2cm}
+\includegraphics[width=2cm]{images/car.png}
+\end{wrapfigure} 
+Vanndammer vil gjøre at Carli mister drivstoff, \\ og mister litt kontrollen over bilen. \\
+Kumlokk i veien gjør at Carl mister kontroll på bilen og kræsjer. \\
+Bensintanker gir Carl ekstra drivstoff, slik at runden varer lenger. \\
+Myke trafikanter vil gi poeng til Carl dersom de blir påkjørt. \\
+Mynter kan plukkes opp slik at Carl kan kjøpe nye biler. \\
+Spilleren får en score for hver spillrunde, i tillegg til at spilleren samler opp virtuelle penger som kan brukes til å bytte bil. \\
+Men du må også være obs på det lokale værforholdet hos deg, fordi det påvirke veien til Carl! 
+
+\section{Aldergrense}
+Vår målgruppe for dette spillet ungdommer og voksne i alderen fra 15 til 25 år, \\ 
+og fordi Carl the Crasher inneholder mild vold er aldegrensen på dette spillet 15. 
+\newpage
+
+\section{Systemkrav og installasjon}
+\subsection{Systemkrav}
+\begin{itemize}
+	\item Ikke mindre enn 1 GB RAM minne\\
+	\item Windows Vista/Linux 2.6.12/Mac OS X 10.4 eller nyere \\
+	\item 50 MB ledig plass for installasjon \\
+	\item Java 8 \\
+	\item Tastatur, mus \\
+ 	\item TeamDank anbefaler deg å ha en prosessor (2005+) med \\ 
+klokkefrekvens på 1.6 Ghz eller bedre.
+\end{itemize}
+\subsection{Installasjon}
+Du må først sørge for at du har installert den nyeste versjonen av Java og \\
+for å kunne spille Carl the Crasher må du laste ned $carlthecrasher.jar$-filen. \\
+Deretter åpner du filen som vanlig for å starte spillet.   
+\newpage
+
+\section{Spillinstruksjoner og -regler} 
+\subsection{Kontroll} 
+Din primære spillinngangsenhet er tastaturet, og kan gjøre følgende: 
+\begin{itemize}
+	\item Du styrer Carl til høyre og venstre ved å bruke enten piltastene eller tastaturknappene \\ $A$ og $D$. 
+	\item Carl kan ikke styre bilens hastighet direkte, men farten vil øke jo lenger du kjøre.
+	\item Du kan ikke kjøre ut av veien, men du kan kjøre på objekter som oppstår på veien.
+	\item Du kan pause spillet ved å gå til pausemenyen ved å trykke på tastaturknappen $ESC$. 
+	\begin{itemize}
+		\item Å trykke på $ESC$ vil gi deg muligheten til å fortsette eller avslutte spillet.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Objekt-interaksjon}
+På veien kan det oppstå forskjellige objekter, og avhengig av objektet kan det påføre bilen en positiv eller negativ effekt. \\
+{\renewcommand\labelitemi{}
+\begin{itemize}
+	\item \includegraphics[scale=0.2]{images/gastank.png} \textbf{Bensintank}: Kan plukkes opp for å øke drivstoffet slik at du kan kjøre lengre 
+	\item \includegraphics[scale=0.5]{images/coin.png} \textbf{Mynt}: På veien kan du finne mynter som du kan plukke opp.
+																Myntene kan brukes i butikken for å kjøpe nye biler.
+	\item \includegraphics[scale=0.2]{images/puddle.png} \textbf{Vanndam}: Kjører du på en vanndam vil det minske mengden drivstoff du har,
+																og samtidig gjøre at du vil miste litt kontrollen på bilen i en liten periode. 
+	\item \includegraphics[scale=0.2]{images/manhole.png} \textbf{Kumlokk}: Dersom du kjører på et kumlokk vil du kræsje og deretter tape umiddelbart.
+	\item \includegraphics[scale=0.4]{images/walker.png} \textbf{Myke trafikanter}: Å kjøre på trafikanter vil gi deg ekstra poeng som vil øke sluttpoengsummen din.
+\end{itemize}
+}
+
+\subsection{Poeng}
+Målet ditt er å få den høyeste poengsummen, og det finnes ulike måter å tjene opp poeng på:
+\begin{itemize}
+	\item Du starter alltid med 0 poeng i starten av en runde, \\men du tjener opp poeng konstant når du kjører.
+	\item Poeng blir opptjent avhengig av hvor langt du kjører. 
+	\item Å kjøre på myke trafikanter vil gi deg poeng, og ulike trafikanter vil gi ulik poengsum.
+\end{itemize}
+
+\subsection{Vær} 
+Spillet vil tilpasse seg etter det lokale værforholdet hos deg. Om det er skyer vil det være skyer på banen,
+om det regner vil det regne på banen, og om det snør vil det være snø på banen. \\
+Disse dataene om værforholdene blir hentet ut fra yr.no. 
+\begin{itemize} 
+	\item \textbf{Sol}: Normal framgang.
+	\item \textbf{Skyer}: Skyer i spillet, men værforholdet endrer ikke spillets framgang.
+	\item \textbf{Regn}: Det regner i spillet og det vil dukke opp flere vanndammer	, samt flere og nye trafikanter. 
+	\item \textbf{Snø}: Det er snø på bygningene og andre trafikanter vil dukke opp. Det vil også være vanskeligere å styre bilen,
+ og du vil miste mye av kontrollen på bilen dersom du kjører i en vanndam.
+\end{itemize}
+
+\newpage
+\section{Bilder}
+	\begin{center}
+	{\renewcommand\labelitemi{}
+		\begin{itemize}
+			\item{\makebox[13.5cm]{\includegraphics[width=1.00\textwidth]{images/main_menu.PNG}}}
+			\item {\hfil Figure 1. Hovedmeny} 
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{\includegraphics[width=1.00\textwidth]{images/hs_menu.PNG}}}
+			\item {\hfil Figure 2. Highscoremeny}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/shop_menu.PNG}}}
+			\item {\hfil Figure 3. Butikkmeny}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/credits.PNG}}}
+			\item {\hfil Figure 4. Kreditering}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/game.PNG}}}
+			\item {\hfil Figure 5. Gameplay}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/cloud.png}}}
+			\item {\hfil Figure 6. Vær: Skyer}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/rain.png}}}
+			\item {\hfil Figure 7. Regn}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/snow.png}}}
+			\item {\hfil Figure 8. Snø}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/pause.PNG}}}
+			\item {\hfil Figure 9. Pausemeny}
+			\bigskip
+			\bigskip
+			\bigskip
+			\item{\makebox[13.5cm]{ \includegraphics[width=1.00\textwidth]{images/gameover.PNG}}}
+			\item {\hfil Figure 10. Game-over}
+		\end{itemize}
+	}
+	\end{center} 
+
+\newpage
+\section{Credits}
+\begin{center} 
+\textbf{TeamDank}\\ \
+
+\textbf{Utvikler team:}\\
+TeamDank Programming Team\\ \
+
+\textbf{Grafikk:} \\
+TeamDank Art Department \\ \
+
+
+\textbf{Værdata:} \\ 
+Weather forecast from Yr, delivered by the Norwegian Meteorological Institute and NRK. \\ 
+http://om.yr.no/verdata/xml/  \\
+(Data from http://www.yr.no/sted/Hordaland/Bergen/Bergen/) \\ \
+
+\textbf{Lyder:} \\ 
+Lyder brukt fra freesound: \\
+car\textunderscore drive.wav (In Car Driving.aif) by (http://freesound.org/people/RutgerMuller/) \\
+happy\textunderscore bgmusic.wav (Happy 8bit Loop 01) by (http://freesound.org/people/Tristan\textunderscore Lohengr) \\
+car\textunderscore crash.mp3 (Car Crash) by (http://freesound.org/people/squareal) \\
+coin\textunderscore sound.wav (Coins 1) by (http://freesound.org/people/ProjectsU012) \\
+dead\textunderscore pedestrian (me\textunderscore ouch.wav) by (http://freesound.org/people/SpazTastic) \\
+fuel.wav (Drip2.wav) by (http://freesound.org/people/Neotone) \\
+splash.mp3 (Splash 1.wav) by (http://freesound.org/people/FreqMan) \\ \
+
+\textbf{Utviklere}: \\
+Peter Andre Johansen \\
+Håvar Eggereide \\
+Kenneth Apeland \\
+Philip Thao Hoang \\
+Markus Johan Ragnhildstveit \\
+Torbjørn Ola Sunnarvik Moen \\
+Elias Refvem Siljan \\
+Sturle Fraga Elvestad \\
+Eirik Strøm \\
+Amund Lindberg \\
+Ole Magnus Lie \\
+Bjørnar Herland \\ \
+
+\textbf{Grafikk:} \\
+Malin Øien \\
+Emilia Botnen Van den Bergh \\ \
+
+\textbf{Coach:} \\
+Gunnar Schulze \\ \ 
+
+\textbf{Juridisk Team:} \\ 
+Anna Fossen-Helle \\ \
+
+\textbf{Spillidé:} \\
+$Team 1\textunderscore9$ \\
+Kenneth Apeland \\
+Natalie Priyaphon Wannaphong \\
+Joakim Moss Grutle \\
+Peder Ben \\ \
+
+\section{Copyright}
+
+ Copyright (C) 2017  TeamDank\\
+
+ This program is free software: you can redistribute it and/or modify \\
+ it under the terms of the GNU General Public License as published by \\
+ the Free Software Foundation, either version 3 of the License, or \\
+ (at your option) any later version.\\ \
+ 
+ This program is distributed in the hope that it will be useful, \\
+ but WITHOUT ANY WARRANTY; without even the implied warranty of \\
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the \\
+ GNU General Public License for more details.\\ \
+
+You have received a copy of the GNU General Public License \\
+along with this program.  If not, see <http://www.gnu.org/licenses/>. \\ \
+
+Too see the full license see: \\
+Lisens for TeamDank
+%%\href{https://gitlab.uib.no/inf112-v2017/inf112-v2017-pr2_team_d/raw/9c544e639247bd83eb9e005f4c7615680b1d9439/LICENSE}{Full license}
+\end{center}
+
+\end{document}

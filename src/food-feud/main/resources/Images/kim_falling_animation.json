@@ -1,0 +1,7 @@
+{
+	"atlas": "Images/player_sheet.json",
+	"speed": "0",
+	"frames": [
+		"kim_feet_step_right"
+	]
+}

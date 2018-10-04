@@ -1,0 +1,56 @@
+Credits: 
+Created by:  
+TeamDank
+
+Developer:
+TeamDank Programming Team
+
+Art: 
+TeamDank Art Department 
+
+WeatherData:
+Weather forecast from Yr, delivered by the Norwegian Meteorological Institute and NRK.
+http://om.yr.no/verdata/xml/ 
+(Data from http://www.yr.no/sted/Hordaland/Bergen/Bergen/)
+
+Soundtracks: 
+This game uses theses sounds from freesound: 
+car_drive.wav (In Car Driving.aif) by (http://freesound.org/people/RutgerMuller/) 
+
+happy_bgmusic.wav (Happy 8bit Loop 01) by (http://freesound.org/people/Tristan_Lohengr) 
+
+car_crash.mp3 (Car Crash) by (http://freesound.org/people/squareal)
+
+coin_sound.wav (Coins 1) by (http://freesound.org/people/ProjectsU012)
+
+dead_pedestrian (me_ouch.wav) by (http://freesound.org/people/SpazTastic)
+
+fuel.wav (Drip2.wav) by (http://freesound.org/people/Neotone)
+
+splash.mp3 (Splash 1.wav) by (http://freesound.org/people/FreqMan)
+
+Game idea:
+Team 1_9, by Kenneth Apeland, Natalie Priyaphon Wannaphong, Joakim Moss Grutle and Peder Ben
+
+
+Members of TeamDank: 
+
+Developers: 
+Philip Thao Hoang
+Torbjørn Ola Sunnarvik Moen
+Kenneth Apeland
+Peter Andre Johansen
+Elias Refvem Siljan
+Håvar Eggereide
+Markus Johan Ragnhildstveit
+Sturle Fraga Elvestad
+Eirik Strøm
+Amund Lindberg
+Ole Magnus Lie
+Bjørnar Herland
+
+Art Department: 
+Malin Øien and Emilia Botnen Van den Bergh
+
+Legal Team: 
+Anna Fossen-Helle

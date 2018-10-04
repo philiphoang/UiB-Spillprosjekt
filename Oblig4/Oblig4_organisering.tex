@@ -1,0 +1,78 @@
+% !TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Project Titlepage Modified (v 0.1) by rcx
+%
+% Original Source: http://www.howtotex.com
+% Date: February 2014
+% 
+% This is a title page template which be used for articles & reports.
+% 
+% This is the modified version of the original Latex template from
+% aforementioned website.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hhline}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{Team D}
+\fancyhead[R]{Universitetet i Bergen}
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% BODY
+%-------------------------------------------------------------------------------
+
+\section*{Organisering av Oblig 4}
+
+\subsection*{Utviklingsmetode}
+
+Vi har valgt den smidige utviklingsmetoden SCRUM, og gjennomf{\o}re det som normalt. 
+Vi kommer til {\aa} ha hyppige Sprints, hvor vi forteller om fremgang og videre plan, 
+for {\aa} holde styr p{\aa} hvordan folk ligger an, og for {\aa} eventuelt kunne reallokere arbeidskraft.
+
+\subsection*{Oppdeling i grupper}
+
+Vi {\o}nsker {\aa} dele opp teamet i grupper, hvor en gruppe utvikler backend, en gruppe lager GUI, en gruppe for animering og illustrering, osv.
+Vi tar utgangspunkt i at hver av disse gruppene vil ha minst 1 branch av git repo.
+
+\subsection*{Evaluering av fremgang}
+
+Vi kommer til {\aa} evaluere fremgang og forutse gjenst{\aa}ende arbeid 
+ved hjelp av en burn-down chart som vil bli oppdatert ved hver Sprint.
+
+\subsection*{Risikoanalyse}
+
+Hvis vi skulle m{\o}te p{\aa} problemer som f.eks. at folk slutter, eller ikke m{\o}ter opp, 
+vil vi f{\o}rst se p{\aa} muligheten om {\aa} reallokere arbeidskraft, 
+og hvis det ikke g{\aa}r vil vi pr{\o}ve {\aa} fjerne trivielle funksjoner fra spillene. 
+Hvis det ikke g{\aa}r vil vi felles avgj{\o}re et spill som ikke blir implementert.
+
+\subsection*{Felles funksjonalitet}
+
+Felles egenskaper for alle spillene inkluderer GUI, 
+innhenting av {\aa}pen data (v{\ae}r) og elementer i spillet.
+Disse elementene inkluderer highscore, items og andre objekter i spillene.
+
+\subsection*{Vanskelighetsgradvurdering}
+
+For {\aa} definere de viktigste/vanskeligste delene av implementasjonen
+kommer vi til ha en planning poker i starten av Oblig 4.
+Dette vil v{\ae}re lettere {\aa} definere i plenum.
+
+
+\end{document}

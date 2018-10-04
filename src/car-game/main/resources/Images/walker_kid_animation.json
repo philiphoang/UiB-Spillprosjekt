@@ -1,0 +1,17 @@
+{
+	"atlas": "Images/pedestrian_sheet.json",
+	"speed": "5",
+	"frames": [
+		"kid1",
+		"kid4",
+		"kid5",
+		"kid6",
+		"kid9",
+		"kid7",
+		"kid10",
+		"kid8",
+		"kid2",
+		"kid11",
+		"kid3"
+	]
+}

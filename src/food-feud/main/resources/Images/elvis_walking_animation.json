@@ -1,0 +1,10 @@
+{
+	"atlas": "Images/player_sheet.json",
+	"speed": "10",
+	"frames": [
+		"elvis_feet_step_right",
+		"elvis_feet",
+		"elvis_feet_step_left",
+		"elvis_feet"
+	]
+}

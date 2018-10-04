@@ -1,0 +1,13 @@
+
+include 'common'
+include 'car-game'
+include 'food-feud'
+include 'nightlife'
+include 'spooks'
+
+rootProject.name = 'teamdank'
+
+rootProject.children.each {
+	it.name = it.name.replace('-', '')
+	it.name = rootProject.name + '-' + it.name
+}

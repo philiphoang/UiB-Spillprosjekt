@@ -1,0 +1,56 @@
+Feedback INF112-v2017 oblig4  team D
+====================================
+# commit: 1cccdcee3372c5cae1cbd4bb836e051f03242d0c
+# spørsmåler til: Gunnar.Schulze@uib.no 
+
+# Spillmanualer
+* manualer har blitt opdattert tilpassende til hvert spill og er lett å lese! Bra!
+
+# Design-modell (for hvert spill) - oppdatert for "major design changes"
+* Overalt veldig gode og fullstendige diagrammer med noen få feil:
+	- f.eks. to GameScreen klasser i samme diagramm (her må dere finne et måte for å skille disse, enten ved bruk av interfaces eller en ny klasse)
+	- av og til feil bruk av komposisjons pil, ref: (https://dzone.com/refcardz/getting-started-uml)
+	- Kompleksiteten av diagrammer gjør det ikke alltid lett å lese
+
+# Dynamisk modell (sekvensdiagram eller tilstandsdiagram)
+* gode diagrammer, dere har vist at dere forstå notasjonen 
+
+# Kildekode
+* Koden er godt organisert og lett å lese og dekker nesten alle funksjonaliteter som har blitt planlagt i begynnelsen.
+* APIen for kjerneressurser er godt brukt (som planlagt) 
+
+# Enhetstester
+* Dere har lagt mange gode tester for kjerneressurser, men noen tester spesiellt for hvert spill ville ha vært bra også!
+
+# Lisens
+* Dere har hatt gode tanker for deres egen lisens før dere bestemmte dere for å bruke GNU general Public license og dere ga også credit til original opprettsmenn/-kvinner til spillideer  - en fin gest!
+
+# Brukeropplevelse
+* Dere har lagt to veldig gøye spill som virker veldig stabil selv i en tidlig versjon
+
+# Byggeskript
+* gode targets i byggeskriptene gjør deres prosjekt "kundevennlig" - bra! 
+* Bruk av continuous integration gjørde utviklingsprosessen veldig lett å følge med. 
+
+# Plansjer oa for presentasjon
+* Gode standards - bra!
+
+# Prosjektstyring
+* Dere har jobbet veldig bra som lag og har vært veldig motivert gjennom det hele prosjektet. 
+* Fra et ekstern perspektiv var lederstrukturen og kommunikasjon i lag eksepsjonell godt (til tross av typiske vanskeligheter) og dere prøvte å få aktivert alle i lag hele tida. 
+
+# Presentasjon (fremføringen)
+* Veldig bra!
+
+# Extra
+* Bruk av continuous integration og pipelines ved gitlab og avansert bruk av issue-tracker og branches for agile development - utmerket!
+
+# Minus
+
+# TOTAL
+
+Retting A: 98.5 / 100 
+Retting B: 99 / 100
+
+Gjennomsnitt: 98.75 / 100 
+

@@ -1,0 +1,80 @@
+%%
+%% This is file `./samples/minutes.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% meetingmins.dtx  (with options: `minutes')
+%% ----------------------------------------------------------------------
+%% 
+%% meetingmins - A LaTeX class for formatting minutes of meetings
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% ----------------------------------------------------------------------
+%% 
+\documentclass[11pt]{meetingmins}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%% Optionally, the following text could be set in the file
+%% department.min in this folder, then add the option 'department'
+%% in the \documentclass line of this .tex file:
+%%\setcommittee{Department of Instruction}
+%%
+\setcommittee{Minutes}
+\setdate{Mars, 22}
+\setpresent{
+  Anna, Emilia, Philip, Kenneth, Elias, Peter, Håvar, Eirik, Markus, Malin
+}
+\begin{document}
+\maketitle
+\subsection{}
+Diskutert hvor man skal lagre objekter, og hvilken klasse som skal huske tilstanden til spillet. Her kom vi frem til at vi skal lagre alle objektene i GameScreen. Videre diskuterte vi hvordan vi skal lagre alle objektene. Tidligere var det tenkt at alle objektene skulle bli lagret i én liste, men dette kan føre til problemer og evt. en veldig lang liste. Vi snakket også om hvordan vi skal legge objektene over/under hverandre i forhold til at bakgrunnen skal ligge bakerst og at et hull skal ligger under bilen (i Bilspill). Vi kom til slutt frem til at antall lag/lister hvert spill vil trenge vil variere med de forskjellige spillene og at vi derfor vil ta stilling til hvor mange lag man vil trenge når vi skal begynne å implementere spillene. Ved implementasjon er planen at vi skal lage en 2-dimensjonal liste. Utenom dette har oppmøtte jobbet videre med sine tildelte oppgaver. Vi har også fått oversikt over hva som gjenstår (endre litt på API etter dagens diskusjon, og bruksmønster og -tekst for TD-uteliv og Bilspill).
+
+\subsection{Skal gjøres neste gang}
+\begin{items}
+\item
+Designdiagram
+\item
+Planlegging av Oblig4
+\item
+Lage presentasjon
+\end{items}
+\vspace{1em}
+\nextmeeting{Tuesday, 23 march, at 12:15 pm}
+\end{document}
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Brian D. Beitzel.
+%% 
+%% This work consists of the file  meetingmins.dtx
+%% and the derived files           meetingmins.cls,
+%%                                 sampleminutes.tex,
+%%                                 department.min,
+%%                                 README.txt, and
+%%                                 meetingmins.pdf.
+%% 
+%%
+%% End of file `./samples/minutes.tex'.

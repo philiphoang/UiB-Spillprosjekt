@@ -1,0 +1,146 @@
+% !TEX encoding = UTF-8 Unicode
+%%
+%% This is file `./samples/minutes.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% meetingmins.dtx  (with options: `minutes')
+%% ----------------------------------------------------------------------
+%% 
+%% meetingmins - A LaTeX class for formatting minutes of meetings
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% ----------------------------------------------------------------------
+%% 
+\documentclass[11pt]{meetingmins}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%% Optionally, the following text could be set in the file
+%% department.min in this folder, then add the option 'department'
+%% in the \documentclass line of this .tex file:
+%%\setcommittee{Department of Instruction}
+%%
+\setcommittee{Minutes}
+\setdate{April, 3}
+\setpresent{
+  Phillip, Kenneth, H{\aa}var, Peter, Malin, Eirik, Markus, Amund, Ole Magnus, Anna, Torbj{\o}rn, Emilia
+}
+\setabsent{
+  Sturle (syk), Ola, Bj{\o}rnar, Elias
+}
+\begin{document}
+\maketitle
+\subsection{Saksliste}
+
+\begin{itemize}
+\item Identifisere oppgaver
+\item Planning poker for {\aa} finne vanskelighetsgrad av oppgaver
+\item Sette opp SonarQube server
+\item Sette opp prosjektet p{\aa} sin egen datamaskin slik at alle er klar
+\end{itemize}
+
+\subsection{Referat}
+
+\begin{itemize}
+\item De som ikke har lest oppgaveteksten, leser den.
+\item Phillip skrev sammendrag av hva vi m{\aa} gj{\o}re i oblig 4
+\item H{\aa}var har satt opp en SonarQube server som er fungerende på sin egen maskin
+\item Sm{\aa} endringer i gradle filer for {\aa} f{\aa} den kompitabel med IntelliJ
+\item G{\aa}r gjennom sammendraget til oblig 4
+\item For neste leveranse skal vi lage en {\textquotedbl}pre-alpha{\textquotedbl} versjon for {\aa} kunne ha et spill
+som er fungerende og som vi kan bygge videre p{\aa}.
+\end{itemize}
+
+\begin{itemize}
+\item Milep{\ae}l
+
+\begin{itemize}
+\item Designmodell
+\item API
+\item Diagrammer
+\end{itemize}
+\item Hva vi m{\aa} ha med for {\aa} f{\aa} fungerende spill
+
+\begin{itemize}
+\item Main metoder til hvert spill
+\item Hvis vi ser p{\aa} Designmodell, s{\aa} er det alt fra Game til GameScreen og videre
+\item Game, GameScreen, Layer, GameObject, Item, Actor
+\end{itemize}
+\item Resultat av session med planning poker: \\
+ Actor - 2 \\
+ Game - 13 \\
+ GameObject - 5 \\
+ GameScreen - 13 \\
+ Main metoder for {\aa} startet hvert spill - 2 \\
+ Item - 1 \\
+ Layer - 5 \\
+\newline
+Disse klassene er felles for alle spill, bortsett fra Main metodene, slik at vi har en liten versjon vi kan implementere videre p{\aa} n{\aa}r vi skal jobbe med de andre spillene.
+
+\item Grafikk
+
+\begin{itemize}
+\item Skal lage alle illustrasjoner og lyder selv
+\item Verkt{\o}y for illustrasjon: Piskel
+\item Spooks
+
+\begin{itemize}
+\item Lager veldig simpel grafikk i starten, og s{\aa} utvide det
+\item Fylle rommet bare med farger for forskjellige objekter, s{\aa} bygge p{\aa} med bedre illustrasjoner etterhvert
+\item Begynne med noen f{\aa} rom i starten
+\item Rommet blir i 2D
+\item Det skal ikke v{\ae}re mulig {\aa} dra objektet rundt i rommet, n{\aa}r man trykker p{\aa} den vil vi f{\aa} den i
+Inventory
+\item Inventory skal v{\ae}re en bare nederst p{\aa} skjermen (Slik som minecraft)
+\end{itemize}
+\end{itemize}
+\item Vi vil sp{\o}rre IT-avdelingen p{\aa} UiB om vi kan ha SonarQube p{\aa} UiB sin server, ellers bruker vi amazon
+sin gratisperiode
+\end{itemize}
+
+\subsection{Saksliste til neste m{\o}te}
+
+\begin{itemize}
+\item Dele oss i mindre lag
+\item Diskutere evt. flere oppgaver
+\end{itemize}
+
+\nextmeeting{Onsdag, 5. April, kl 14:15}
+\end{document}
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Brian D. Beitzel.
+%% 
+%% This work consists of the file  meetingmins.dtx
+%% and the derived files           meetingmins.cls,
+%%                                 sampleminutes.tex,
+%%                                 department.min,
+%%                                 README.txt, and
+%%                                 meetingmins.pdf.
+%% 
+%%
+%% End of file `./samples/minutes.tex'.

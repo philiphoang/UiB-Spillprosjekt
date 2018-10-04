@@ -1,0 +1,125 @@
+plugins {
+    id "org.sonarqube" version "2.3"
+}
+
+subprojects {
+	apply plugin: 'java'
+  apply plugin: 'jacoco'
+	apply plugin: 'eclipse'
+	apply plugin: 'idea'
+  dependencies {
+	  compile 'com.badlogicgames.gdx:gdx:1.9.6'
+		compile 'com.badlogicgames.gdx:gdx-backend-lwjgl:1.9.6'
+		compile 'com.badlogicgames.gdx:gdx-platform:1.9.6:natives-desktop'
+		compile 'com.badlogicgames.gdx:gdx-box2d:1.9.6'
+		compile 'com.badlogicgames.gdx:gdx-box2d-platform:1.9.6:natives-desktop'
+        compile "com.badlogicgames.gdx:gdx-freetype:1.9.6"
+        compile "com.badlogicgames.gdx:gdx-freetype-platform:1.9.6:natives-desktop"
+		compile 'org.slf4j:slf4j-api:1.7.13'
+		compile 'com.google.code.gson:gson:2.8.0'
+    	testCompile "com.badlogicgames.gdx:gdx-backend-headless:1.9.6"
+	    testCompile 'junit:junit:4.12'
+	    testCompile 'org.mockito:mockito-all:1.9.5'
+  }
+
+	repositories {
+	    mavenCentral()
+	}
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+	sourceSets.main.java.srcDirs = [ 'main/java']
+	sourceSets.main.resources.srcDirs = ['main/resources']
+	sourceSets.test.java.srcDirs = [ 'test/java']
+	sourceSets.test.resources.srcDirs = [ 'test/resources']
+
+  jacocoTestReport {
+        additionalSourceDirs = files(sourceSets.main.allSource.srcDirs)
+        sourceDirectories = files(sourceSets.main.allSource.srcDirs)
+        classDirectories =  files(sourceSets.main.output)
+        reports {
+            html.enabled = true
+            xml.enabled = true
+            csv.enabled = false
+        }
+    }
+}
+
+
+project(':teamdank-cargame') {
+	dependencies {
+		compile project(':teamdank-common')
+      testCompile project(':teamdank-common').sourceSets.test.output
+	}
+
+  project.ext.mainClassName = 'uib.teamdank.cargame.CarGame'
+
+  task dist(type: Jar) {
+    from files(sourceSets.main.output.classesDir)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.compile.collect {zipTree(it)}}
+ 
+    manifest {
+        attributes 'Main-Class': 'uib.teamdank.cargame.CarGame'
+     }
+  }
+
+
+}
+
+project(':teamdank-foodfeud') {
+	dependencies {
+		compile project(':teamdank-common')
+      testCompile project(':teamdank-common').sourceSets.test.output
+	}
+  project.ext.mainClassName = 'uib.teamdank.foodfeud.FoodFeud'
+
+  task dist(type: Jar) {
+    from files(sourceSets.main.output.classesDir)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.compile.collect {zipTree(it)}}
+ 
+    manifest {
+        attributes 'Main-Class': 'uib.teamdank.foodfeud.FoodFeud'
+     }
+  }
+}
+
+project(':teamdank-nightlife') {
+	dependencies {
+		compile project(':teamdank-common')
+	}
+}
+
+project(':teamdank-spooks') {
+	dependencies {
+		compile project(':teamdank-common')
+	}
+}
+
+def exportedProjects= [
+        ":teamdank-common",
+        ":teamdank-cargame",
+        ":teamdank-foodfeud",
+        ":teamdank-nightlife",
+        ":teamdank-spooks"
+]
+
+task alljavadoc(type: Javadoc) {
+    source exportedProjects.collect { project(it).sourceSets.main.allJava }
+    classpath = files(exportedProjects.collect { project(it).sourceSets.main.compileClasspath })
+    destinationDir = file("docs/javadoc")
+}
+
+task jacocoRootReport(type: org.gradle.testing.jacoco.tasks.JacocoReport) {
+    dependsOn = subprojects.test
+    additionalSourceDirs = files(subprojects.sourceSets.main.allSource.srcDirs)
+    sourceDirectories = files(subprojects.sourceSets.main.allSource.srcDirs)
+    classDirectories =  files(subprojects.sourceSets.main.output)
+    executionData = files(subprojects.jacocoTestReport.executionData)
+    reports {
+        html.enabled = true
+        xml.enabled = true
+        csv.enabled = false
+    }
+}

@@ -1,0 +1,28 @@
+/etc/gitlab-runner/
+
+
+concurrent = 5
+check_interval = 0
+
+[[runners]]
+  name = "serverDank"
+  url = "https://gitlab.uib.no/ci"
+  token = "e1f47ec6d189885911855a7c77bcd1"
+  executor = "docker"
+  [runners.docker]
+    tls_verify = false
+    image = "openjdk:8"
+    privileged = false
+    disable_cache = false
+    volumes = ["/cache", "/srv/nginx/pages/gitlabapi/public"]
+    pull_policy = "if-not-present"
+  [runners.cache]
+
+[[runners]]
+  name = "KforBash"
+  url = "https://gitlab.uib.no/ci"
+  token = "dfe8d252657b47964c9c6c48016105"
+  executor = "shell"
+  builds_dir = "/gitlab/build/"
+  cache_dir = "/gitlab/build/"
+  [runners.cache]

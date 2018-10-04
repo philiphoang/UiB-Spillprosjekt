@@ -1,0 +1,99 @@
+% !TEX encoding = UTF-8 Unicode
+%%
+%% This is file `./samples/minutes.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% meetingmins.dtx  (with options: `minutes')
+%% ----------------------------------------------------------------------
+%% 
+%% meetingmins - A LaTeX class for formatting minutes of meetings
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% ----------------------------------------------------------------------
+%% 
+\documentclass[11pt]{meetingmins}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%% Optionally, the following text could be set in the file
+%% department.min in this folder, then add the option 'department'
+%% in the \documentclass line of this .tex file:
+%%\setcommittee{Department of Instruction}
+%%
+\setcommittee{Minutes}
+\setdate{19. April}
+\setpresent{
+  Anna, Eirik, H{\aa}var, Kenneth, Malin, Markus, Ole Magnus, Peter, Philip, Torbj{\o}rn, Amund, Emilia
+}
+\setabsent{
+  Bj{\o}rnar, Elias, , Ola, Sturle
+}
+\begin{document}
+\maketitle
+\subsection{Referat}
+\begin{itemize}
+	\item Holdt en Scrum stand-up meeting og fortalte hva vi fikk gjort ved forrige Sprint 
+	\begin{itemize} 
+		\item Hva som ble fullf{\o}rt forrige Sprint: 
+		\begin{enumerate}
+			\item GameScreen og Layer 
+			\item Game klasse for hvert spill 
+			\item Klassene Item, Actor, GameObject og Main-metoder 
+			\item UI og fiksing av skalering av spillene 
+			\item Illustrasjon av knapper til menyene, bilder av objekter og bakgrunn
+		\end{enumerate}
+		\item Illustrasjonsgruppen har tegnet de nødvendige bildene slik at vi kan få et fungerende spill 
+		
+		\item Diskuterte lisensering angående henting av værdata 
+
+		\item Lagde issues for hver problemstilling som skal implementeres/gjøres til neste Sprint 
+
+		\item Tildelte nye oppgaver etter issues på Git og beholdt den samme gruppestrukturen 
+
+	\end{itemize}
+\end{itemize}
+
+\subsection{Saksliste til neste m{\o}te}
+\begin{itemize}
+\item Avslutte Sprint 2 og diskutere hva vi skal gjøre i Sprint 3  
+\item Ha et fungerende spill til neste møte 
+\end{itemize}
+\nextmeeting{Tirsdag, 25. April, kl 12:15}
+\end{document}
+%% 
+%% Copyright (C) 2011-2013 by Brian D. Beitzel <brian@beitzel.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Brian D. Beitzel.
+%% 
+%% This work consists of the file  meetingmins.dtx
+%% and the derived files           meetingmins.cls,
+%%                                 sampleminutes.tex,
+%%                                 department.min,
+%%                                 README.txt, and
+%%                                 meetingmins.pdf.
+%% 
+%%
+%% End of file `./samples/minutes.tex'.

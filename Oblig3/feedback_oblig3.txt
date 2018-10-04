@@ -1,0 +1,63 @@
+ Feedback INF112-v2017, oblig 3, arbeidslag D
+==============================================
+commit: 1dbcfc0079955464c006554347823d3a66ef3482
+
+# Kravspesifikasjon
+* (+) bra med flere "use cases" og skillet mellom funksjonal / ikke-funksjonal krav
+
+# Bruksmønsterdiagram
+* (+) inkluderer de fleste use cases
+ 
+# Bruksmønstertekst
+* (+) bra, tilsvarer til brukmønsterdiagram 
+
+# Design-modell (for hvert spill)
+* (+) i alt bra, også en god idee å skille mellom kjern ressurser og spill-avhengige klasser
+* (-) feil bruk av komposisjons pil flere ganger. Komposisjon betyr at en klasse inneholder en andre klasse som kan ikke eksistere uavhengig. Bruk "aggregasjon" der det er naturlig.
+* (-) prøv å rydde diagrammer og bruk de samme konvensjoner for extensions, interfaces, etc. i alle diagrammene
+
+# API for kjerneressurser
+* (+) veldig oversiktlig og fullstendig med javadoc API beskrivelsen 
+* (+) klasser for å håndtere vær data
+
+# API for hvert spill 
+* (+) bra integrasjon med kjerneressurser
+
+# Plan for oblig.4 
+* det vises at dere har en god plan med dokumentasjon kunne også inneholde litt mer detaljer om f.eks hvor ofte dere har planlagt å møtes hver uke, osv.
+* hvordan skal kvalitet sikres denne iterasjonen? Hvem er ansvarlig for dette?
+
+# Plansjer oa for presentasjon 
+* i alt veldig bra og oversiktlig. Litt mer dokumentasjon om hvordan team organiserte seg ville ha vært bra (flere trello board screens, etc.)
+
+# Prosjektstyring  
+* (+) bruk av trello og slack
+* (+/-) Referater er generelt bra men kunne følge en felles standard (kanskje bruk en latex eller markdown template).  
+* (+) bra oraganisering med delarbeidslager og lederstrukturen
+
+# Presentasjon (fremføringen)
+* (+) bra flyt og oppdeling mellom flere personer
+* (+) gode slides og diagrammer 
+* (+) design modeller ble forklart godt men noen detaljer kunne ha vært større på skjermen (vanskelig å lese). 
+Kanskje bruk en slags "zoom" når dere snakker om viktige detaljer. 
+* (+) plan for oblig 4 
+* (-) dere skulle har fortalt litt mer om hvordan åpen (vær) data skal integreres 
+
+# Extra
++ (+1) for "kriseteam"
+
+# Minus
+
+
+_# Total 1_
+= 92 / 100_
+
+_# Total 2_
+= 94 / 100
+
+_# Final___
+= 93 / 100 
+
+
+
+

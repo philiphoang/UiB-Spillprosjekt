@@ -1,0 +1,7 @@
+{
+	"atlas": "Images/player_sheet.json",
+	"speed": "0",
+	"frames": [
+		"guy2_feet"
+	]
+}

@@ -1,0 +1,15 @@
+/etc/nginx/sites-available/
+
+server {
+     listen 80;
+     root /srv/nginx/pages/gitlabapi/public;
+     server_name gitlabapi; 
+     index index.html index.htm index.php;
+ 
+     charset utf-8;
+ 
+     location / {
+     try_files $uri $uri/ /index.html;
+     }
+ 
+}

@@ -1,0 +1,11 @@
+{
+	"atlas": "bird_atlas.json",
+	"speed": "10",
+	"frames": [
+		"bird1",
+		"bird2",
+		"bird3",
+		"bird4",
+		"bird5"
+	]
+}

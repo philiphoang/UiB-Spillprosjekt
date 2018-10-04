@@ -1,0 +1,10 @@
+------------------------------------
+INF112 - Oblig 2
+Gruppe: 1.9
+Medlemmer: pbo008, jgr036, pwa003, kap005
+Rettet av: Bjørn Bredesen
+------------------------------------
+Status: Bestått.
+
+Kommentarer: Målgruppe, spillvarighet, antall brukere og bruk av åpne data er klart angitt. Spillereglene ser bra ut, og er illustrerte. Bruksmønsterdiagram og bruksmønstertekst er OK. Brukerhistorier er bra. Det er ført referat fra flere møter.
+

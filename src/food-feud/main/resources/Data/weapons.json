@@ -1,0 +1,182 @@
+[
+	{
+		"name": "Melk",
+		"description": "A cold box of milk.",
+		"texture": "milk",
+		"calories": "41",
+		"mass": "0.33",
+		"amount": "5",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Coca Cola",
+		"description": "The most popular fizzy drink.",
+		"texture": "soda",
+		"calories": "42",
+		"mass": ".5",
+		"amount": "3",
+		"type": "BURST_BALLISTIC"
+	},
+	{
+		"name": "Vannmelon",
+		"description": "A big green ball of fruit.",
+		"texture": "watermelon",
+		"calories": "35",
+		"mass": "2",
+		"amount": "1",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Sushi",
+		"description": "Raw fish. Ew.",
+		"texture": "sushi",
+		"calories": "147",
+		"mass": ".02",
+		"amount": "5",
+		"type": "BURST_BALLISTIC"
+	},
+	{
+		"name": "Doughnut",
+		"description": "Doughnut. Mmmmmmmh. Ow!",
+		"texture": "doughnut",
+		"calories": "497",
+		"mass": ".1",
+		"amount": "1",
+		"type": "HEAVY_BALLISTIC"
+	},
+	{
+		"name": "Potet",
+		"description": "God, norsk-dyrket potet.",
+		"texture": "potato",
+		"calories": "72",
+		"mass": ".1",
+		"amount": "2",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Seigmenn",
+		"description": "Elastiske, sukrett menn.",
+		"texture": "seigmenn",
+		"calories": "292",
+		"mass": ".02",
+		"amount": "20",
+		"type": "HEAVY_BALLISTIC"
+	},
+	{
+		"name": "Wienerpølse",
+		"description": "En lang, brun pølse.",
+		"texture": "vienna_sausage",
+		"calories": "256",
+		"mass": ".35",
+		"amount": "2",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Iskrem",
+		"description": "En kronis med sjokolade i bunnen.",
+		"texture": "ice_cream",
+		"calories": "300",
+		"mass": ".1",
+		"amount": "2",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Ananas",
+		"description": "En syrlig frukt som kan brenne tunga.",
+		"texture": "pineapple",
+		"calories": "45",
+		"mass": "1",
+		"amount": "2",
+		"type": "HEAVY_BALLISTIC"
+	},
+	{
+		"name": "Cheese",
+		"description": "Et gult, hullete melkeprodukt.",
+		"texture": "cheese",
+		"calories": "351",
+		"mass": ".5",
+		"amount": "2",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Pizza",
+		"description": "Nå er det tid for lørdagspizza.",
+		"texture": "pizza",
+		"calories": "198",
+		"mass": ".5",
+		"amount": "1",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Ostepop",
+		"description": "Ostepop, hjelper mot streeeess.",
+		"texture": "cheez_doodles",
+		"calories": "495",
+		"mass": ".04",
+		"amount": "100",
+		"type": "HEAVY_BALLISTIC"
+	},
+	{
+		"name": "Wine",
+		"description": "Et glass med vin, og så et par til.",
+		"texture": "wine",
+		"calories": "64",
+		"mass": ".3",
+		"amount": "4",
+		"type": "HEAVY_BALLISTIC"
+	},
+	{
+		"name": "Sjokolade",
+		"description": "En brun, deilig plate.",
+		"texture": "chocolate",
+		"calories": "541",
+		"mass": ".1",
+		"amount": "2",
+		"type": "SPRAY_BALLISTIC"
+	},
+	{
+		"name": "Gulrot",
+		"description": "Fersk snømannese.",
+		"texture": "carrot",
+		"calories": "29",
+		"mass": ".1",
+		"amount": "8",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Muffins",
+		"description": "Bakt deig i papirform.",
+		"texture": "cupcake",
+		"calories": "375",
+		"mass": ".075",
+		"amount": "2",
+		"type": "SPRAY_BALLISTIC"
+	},
+	{
+		"name": "Cake",
+		"description": "Kaken er en løgn.",
+		"texture": "cake",
+		"calories": "943",
+		"mass": "1.25",
+		"amount": "1",
+		"type": "SPRAY_BALLISTIC"
+	},
+	{
+		"name": "Brød",
+		"description": "Lyst brød.",
+		"texture": "bread",
+		"calories": "264",
+		"mass": ".7",
+		"amount": "1",
+		"type": "LIGHT_BALLISTIC"
+	},
+	{
+		"name": "Nudler",
+		"description": "Lange strimler med billig mat.",
+		"texture": "noodles",
+		"calories": "190",
+		"mass": ".1",
+		"amount": "8",
+		"type": "BURST_BALLISTIC"
+	}
+]
